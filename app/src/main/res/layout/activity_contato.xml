@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contato"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rafaelpinheiro.atmempresaconsultoria.ContatoActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_weight="0.07">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/detalhe_contato"
+            android:id="@+id/imagemDetalheContatoId"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Contato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoDetalheContatoId"
+            android:layout_weight="10"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Email: consultoria@atm.com.br"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoEmailId"
+        android:layout_weight="0.07"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:lineSpacingExtra="14sp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Telefone: (85)123-45678"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoTelefoneId"
+        android:layout_weight="0.07"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Celular: (85)98765-4321"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoCelularId"
+        android:layout_weight="0.07"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18sp" />
+</LinearLayout>
