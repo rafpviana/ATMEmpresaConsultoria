@@ -11,60 +11,58 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.example.rafaelpinheiro.atmempresaconsultoria.MainActivity"
-    android:background="@android:color/background_light">
+    android:background="@android:color/background_light"
+    android:gravity="center">
 
     <ImageView
+        android:id="@+id/imagemLogoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
-        android:id="@+id/imagemLogoId"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp" />
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="295dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp">
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/menu_empresa"
             android:id="@+id/imagemMenuEmpresaId"
-            android:layout_weight="1" />
-
-        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/menu_servico"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/menu_empresa" />
+
+        <ImageView
             android:id="@+id/imagemMenuServicosId"
-            android:layout_weight="1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/menu_servico" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="295dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="15dp">
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/menu_cliente"
             android:id="@+id/imagemMenuClientesId"
-            android:layout_weight="1" />
-
-        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/menu_contato"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/menu_cliente" />
+
+        <ImageView
             android:id="@+id/imagemMenuContatoId"
-            android:layout_weight="1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/menu_contato" />
     </LinearLayout>
 
 </LinearLayout>
